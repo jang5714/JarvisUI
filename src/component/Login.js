@@ -1,7 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'react-router-dom'
+import Navigation from 'component/Nevigation';
 import Video from '../resource/Jarvis.mp4'
-
 const Login = ()=> (
 <BodyDiv id="body">
 <Videojarvis controls>
@@ -17,16 +18,16 @@ const Login = ()=> (
             <br/>
             <Button>Twiter Login</Button>
             <br/>
-            <LoginButton >login</LoginButton>
+            <LoginButton >Login</LoginButton>
             <>&nbsp;</>
-            <JoginButton >Join</JoginButton>
+            <JoginButton>Join</JoginButton>
         </From>
     </Div>
 </BodyDiv>
 )
 
 export default Login
-    
+
 const From = styled.form`
     z-index: 2;
 `
@@ -37,7 +38,7 @@ const Videojarvis = styled.video`
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: 1;
+    z-index: -1;
     allow='autoplay; encrypted-media'
 `
 const BodyDiv = styled.div`
@@ -50,6 +51,7 @@ const JoginButton = styled.button`
     border-width: 3px;
     height: 30px;
     width: 20%;
+    ;
 `
 
 
@@ -79,3 +81,4 @@ const H1 = styled.h1`
     margin-top: 70%;
     
 `
+
