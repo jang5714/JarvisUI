@@ -4,7 +4,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Join from 'component/Join';
+import Join from 'common/pages/Join';
+import Checklist from 'common/pages/Checklist';
 
 ReactDOM.render(
   <React.StrictMode>
