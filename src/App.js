@@ -1,7 +1,7 @@
 // import './App.css';
 import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom';
-import { Navigation } from 'common/index';
+import { Navigation, Day } from 'common/index';
 import { Join, Login,FindID,FindFw} from 'user/index';
 import { Checklist } from 'survey/index';
 import { Diary } from 'diary/index';
@@ -21,6 +21,7 @@ const App = () => (
     <Route exact path='/calendar' component={Calendar}/>
     <Route exact path='/findID' component={FindID}/>
     <Route exact path='/findFw' component={FindFw}/>
+    <Route exact path='/day' component={Day}/>
   </Switch>
   </>
 )
