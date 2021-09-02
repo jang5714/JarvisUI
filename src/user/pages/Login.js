@@ -18,6 +18,8 @@ const Login = ()=> (
                 <LoginButton >Login</LoginButton>
                 <>&nbsp;</>
                 <JoginButton>Join</JoginButton>
+                <A href="http://localhost:3000/findid">아이디</A>
+                <A href="http://localhost:3000/findpassword">비밀번호</A>
             </From>
         </Div>
     </BodyDiv>
@@ -78,5 +80,9 @@ const H1 = styled.h1`
     font-size: 100px;
     margin-top: 70%;
     
+`
+const A = styled.a`
+    margin: 0;
+    color: white;
 `
 
