@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from '../resource/Jarvis.mp4'
+import Video from 'common/images/Jarvis.mp4'
 
 const Join = () =>(
     <BodyDiv>

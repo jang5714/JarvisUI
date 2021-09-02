@@ -1,21 +1,27 @@
 import react from 'react'
-import Video from '../resource/Jarvis.mp4'
+import styled from 'styled-components'
+import jarvis from 'common/images/jarviss.gif'
 const Backvideo = ()=>(
-    <>
-    <Videojarvis controls>
-            <source src={Video}/>
-    </Videojarvis>
-    </>
+    <Div>
+    <Img src={jarvis}/>
+    </Div>
 )
 
 export default Backvideo
 
-const Videojarvis = styled.video`
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
-    allow='autoplay; encrypted-media'
+const Div = styled.div`
+    background-size: cover;
+    height: 100%
+    padding: 0;
+    margin: 0; 
+`
+
+const Img = styled.img`
+    display: flex;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+
+
 `

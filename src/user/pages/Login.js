@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from 'common/resource/Jarvis.mp4'
+import Video from 'common/images/Jarvis.mp4'
 
 const Login = ()=> (
     <BodyDiv id="body">

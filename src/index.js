@@ -4,12 +4,11 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Join from 'common/pages/Join';
-import Checklist from 'common/pages/Checklist';
+import Backvideo from 'common/components/Backvideo'
 
 ReactDOM.render(
   <React.StrictMode>
-    <BrowserRouter><App /></BrowserRouter>
+    <BrowserRouter><Backvideo /></BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

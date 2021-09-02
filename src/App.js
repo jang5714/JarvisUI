@@ -1,8 +1,9 @@
 // import './App.css';
 import React from 'react'
 import { Route, Redirect, Switch } from 'react-router-dom';
-import Navigation from 'common/components/Nevigation';
-import { Join, Login, Checklist } from 'common';
+import { Navigation } from 'common/index';
+import { Join, Login} from 'user/index';
+import { Checklist } from 'survey/index';
 
 const App = () => (
   <>
