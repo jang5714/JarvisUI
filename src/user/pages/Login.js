@@ -1,12 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from 'common/images/Jarvis.mp4'
+import jarvis from 'common/images/jarviss.gif'
 
 const Login = ()=> (
     <BodyDiv id="body">
-    <Videojarvis controls>
-        <source src={Video}/>
-    </Videojarvis>
+    <Img src={jarvis}/>
         <Div>
             <From>
                 <H1>Jarvis</H1>
@@ -31,15 +29,16 @@ const From = styled.form`
     z-index: 2;
 `
 
-const Videojarvis = styled.video`
+const Img = styled.img`
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     z-index: -1;
-    allow='autoplay; encrypted-media'
 `
+
 const BodyDiv = styled.div`
     width: 100%;
     height: 100%;

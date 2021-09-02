@@ -5,8 +5,8 @@ import styled from 'styled-components'
 const Navigation = () =>(
     <Nav class="navi" color="white">
         <NavItem>
-            <NavList><Link to="/join">Login</Link></NavList>
-            <NavList><Link to="/login">Join</Link></NavList>
+            <NavList><Link to="/login">Login</Link></NavList>
+            <NavList><Link to="/join">Join</Link></NavList>
             <NavList><Link to="/checklist">Checklist</Link></NavList>
         </NavItem>
     </Nav>

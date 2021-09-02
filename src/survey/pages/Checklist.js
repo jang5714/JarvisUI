@@ -1,10 +1,10 @@
 import react from 'react'
 import styled from 'styled-components'
-import Video from 'common/images/jarviss.gif'
+import jarvis from 'survey/images/jarviss.gif'
 
 const Checklist = () =>(
     <div>
-        <Videojarvis/>
+        <Img src={jarvis}/>
         <Divfull>
             <H1>Jaris</H1>
             <P1> Check your intersts <br/>
@@ -74,8 +74,7 @@ const H1 = styled.h1`
     display: flex;
     justify-content: center;
     font-size: 120px;
-    margin-top: 30%;
-    margin: 20px;
+    margin: 0px;
 `
 
 const P1 = styled.p`
@@ -104,9 +103,13 @@ const Div = styled.div`
     display: flex;
     justify-content: center;
 `
-const Videojarvis = styled.div`
-    background-image: url("common/images/jarviss.gif");
-    background-size; 100% 100%;
+const Img = styled.img`
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     z-index: -1;
 `
 const Ul = styled.ul`

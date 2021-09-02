@@ -1,12 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import Video from 'common/images/Jarvis.mp4'
-
+import jarvis from 'user/images/jarviss.gif'
 const Join = () =>(
     <BodyDiv>
-        <Videojarvis controls>
-            <source src={Video}/>
-        </Videojarvis>
+        <Img src={jarvis}/>
         <Div id="join">
             <Form>
                 <H1>Jarvis</H1>
@@ -72,12 +69,12 @@ const H1 = styled.h1`
     margin-top: 30%;
     
 `
-const Videojarvis = styled.video`
+const Img = styled.img`
     position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
     z-index: -1;
-    allow='autoplay; encrypted-media'
 `
